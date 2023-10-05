@@ -1,5 +1,23 @@
 <script setup>
 import NavBar from "../components/Navbar.vue";
+import gsap from "gsap";
+import { ref, onMounted } from "vue";
+import { usePathStore } from "../stores/path";
+const pathStore = usePathStore();
+pathStore.updatePath("/");
+console.log(pathStore.getPrevious);
+onMounted(() => {
+  gsap.from(".heading", {
+    x: -1000,
+    ease: "back",
+  });
+  gsap
+    .from(".caption", {
+      opacity: 0,
+      duration: 2,
+    })
+    .delay(1);
+});
 </script>
 
 <template>
@@ -8,9 +26,9 @@ import NavBar from "../components/Navbar.vue";
   >
     <NavBar></NavBar>
     <div class="text-[#FBEBD9] w-1/2 m-auto">
-      <h1 class="text-5xl mb-2 font-bold font-ibm">Hello,</h1>
-      <h1 class="text-5xl font-bold font-ibm">I'm Justin Zhang</h1>
-      <h3 class="mt-10 font-jetbrains">
+      <h1 class="text-5xl mb-2 font-bold font-ibm heading">Hello,</h1>
+      <h1 class="text-5xl font-bold font-ibm heading">I'm Justin Zhang</h1>
+      <h3 class="mt-10 font-jetbrains caption">
         I'm a freshman at Renesslaer Polytechnic Institute pursuing a major in
         Computer Science and ITWS. Take a look around!
       </h3>

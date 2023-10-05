@@ -1,5 +1,8 @@
 <script setup>
 import NavBar from "../components/Navbar.vue";
+import { usePathStore } from "../stores/path";
+const pathStore = usePathStore();
+pathStore.updatePath("/resume");
 </script>
 
 <template>

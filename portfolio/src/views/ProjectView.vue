@@ -1,6 +1,55 @@
 <script setup>
 import NavBar from "../components/Navbar.vue";
 import Project from "../components/Project.vue";
+import gsap from "gsap";
+import { onMounted, onUnmounted, ref } from "vue";
+import Home from "vue-material-design-icons/Home.vue";
+import FileDocumentOutline from "vue-material-design-icons/FileDocumentOutline.vue";
+import Github from "vue-material-design-icons/Github.vue";
+import FilePresentationBox from "vue-material-design-icons/FilePresentationBox.vue";
+import Linkedin from "vue-material-design-icons/Linkedin.vue";
+import EmailOutline from "vue-material-design-icons/EmailOutline.vue";
+import Handshake from "vue-material-design-icons/Handshake.vue";
+import ArrowLeft from "vue-material-design-icons/ArrowLeft.vue";
+import { useRouter } from "vue-router";
+import { usePathStore } from "../stores/path";
+
+const router = useRouter();
+
+const cards = ref();
+onMounted(() => {
+  const pathStore = usePathStore();
+  console.log(pathStore.getPrevious);
+  if (pathStore.getPrevious == "/" || pathStore.getPrevious == "/resume") {
+    gsap.from(".title", {
+      x: -400,
+      duration: 1,
+      y: -100,
+      scale: 1 / 4,
+      ease: "power4",
+    });
+  }
+  gsap.to(".link", { y: -10000 });
+
+  gsap
+    .from(".arrow", {
+      x: -100,
+      duration: 0.5,
+      ease: "back",
+    })
+    .delay(0.8);
+  gsap
+    .from(".project-card", {
+      opacity: 0,
+      y: 300,
+      stagger: 0.2,
+      ease: "back",
+      duration: 0.3,
+    })
+    .delay(0.4);
+  pathStore.updatePath("/projects");
+});
+
 const projects = [
   {
     img: "sudoku.jpg",
@@ -51,9 +100,57 @@ const projects = [
   <div
     class="flex font-ibm bg-gradient-to-r from-[#443db8] via-[#7171d2] via-33% to-[#0097ff] to-100% h-fill"
   >
-    <NavBar></NavBar>
+    <router-view></router-view>
+    <router-link to="/" class="flex text-white absolute m-8 z-10 arrow"
+      ><ArrowLeft :size="40" fillColor="#FBEBD9"></ArrowLeft
+    ></router-link>
+    <div class="w-full absolute flex p-8 justify-between">
+      <div class="right-side flex" ref="right">
+        <router-link to="/" class="flex text-white mr-8 link">
+          <Home :size="40" fillColor="#FBEBD9"></Home
+          ><span class="m-auto text-xl m-2">Home</span>
+        </router-link>
+        <div class="flex text-white mr-8">
+          <FilePresentationBox
+            :size="40"
+            fillColor="#FBEBD9"
+            class="link"
+          ></FilePresentationBox>
+          <!-- <span class="m-auto text-xl m-2">Projects</span> -->
+        </div>
+        <router-link to="/resume" class="flex text-white link">
+          <FileDocumentOutline
+            :size="40"
+            fillColor="#FBEBD9"
+          ></FileDocumentOutline>
+          <span class="m-auto text-xl m-2">Resume</span>
+        </router-link>
+      </div>
+      <div class="socials flex">
+        <h2 class="text-white text-xl font-semibold m-auto mr-4">
+          Connect with me:
+        </h2>
+        <router-link to="/email" class="mx-4"
+          ><EmailOutline :size="48" fillColor="#FBEBD9"></EmailOutline
+        ></router-link>
+        <a class="mx-4" href="https://github.com/zhangj23"
+          ><Github :size="48" fillColor="#FBEBD9"></Github
+        ></a>
+        <a
+          class="mx-4"
+          href="https://www.linkedin.com/in/justin-zhang-94a406256/"
+          ><Linkedin :size="48" fillColor="#FBEBD9"></Linkedin
+        ></a>
+        <a class="mx-4" href="https://rpi.joinhandshake.com/stu/users/51963642"
+          ><Handshake :size="48" fillColor="#FBEBD9"></Handshake
+        ></a>
+      </div>
+    </div>
+
     <div class="mt-28 mx-auto">
-      <h1 class="text-white text-8xl text-center font-semibold">Projects</h1>
+      <h1 class="text-white text-8xl text-center font-semibold title">
+        Projects
+      </h1>
       <div class="mt-12 flex flex-wrap justify-center">
         <Project
           v-for="project in projects"
@@ -63,6 +160,8 @@ const projects = [
           :name="project.name"
           :languages="project.languages"
           :date="project.date"
+          class="project-card"
+          ref="cards"
         ></Project>
       </div>
     </div>

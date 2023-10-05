@@ -1,18 +1,18 @@
 <template>
   <div class="w-full absolute flex p-8 justify-between">
     <div class="right-side flex">
-      <router-link to="/" class="flex text-white mr-8">
+      <router-link to="/" class="flex text-white mr-8 link">
         <Home :size="40" fillColor="#FBEBD9"></Home
         ><span class="m-auto text-xl m-2">Home</span>
       </router-link>
-      <router-link to="/projects" class="flex text-white mr-8">
+      <router-link to="/projects" class="flex text-white mr-8 link">
         <FilePresentationBox
           :size="40"
           fillColor="#FBEBD9"
         ></FilePresentationBox>
         <span class="m-auto text-xl m-2">Projects</span>
       </router-link>
-      <router-link to="/resume" class="flex text-white">
+      <router-link to="/resume" class="flex text-white link">
         <FileDocumentOutline
           :size="40"
           fillColor="#FBEBD9"
@@ -49,9 +49,20 @@ import EmailOutline from "vue-material-design-icons/EmailOutline.vue";
 import Handshake from "vue-material-design-icons/Handshake.vue";
 import { useRoute } from "vue-router";
 import { ref, onMounted } from "vue";
+import gsap from "gsap";
 
-const route = useRoute();
-console.log(route.path);
+onMounted(() => {
+  const route = useRoute();
+  console.log(route.path);
+  if (route.path == "/") {
+    gsap.from(".link", {
+      y: -300,
+      stagger: 0.2,
+      ease: "back",
+    });
+  }
+});
+
 const checkHome = function () {
   console.log();
 };
