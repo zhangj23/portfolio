@@ -44,7 +44,7 @@ pathStore.updatePath("/projects/sudoku");
     ></router-link>
     <div class="mt-28 ml-20 w-full">
       <h1 class="text-white text-6xl font-semibold title">
-        User authentication and APIs
+        Minimax: TicTacToe Optimized
       </h1>
       <img
         class="w-2/3 h-1/2 object-cover rounded-md mt-8 image"
@@ -53,23 +53,14 @@ pathStore.updatePath("/projects/sudoku");
       />
       <div class="mt-8 w-2/3 text-2xl text text-white">
         <p class="mb-8">
-          Created a full-stack website using
-          <span class="font-bold">Vue 2 </span> and Google's
-          <span class="font-bold">Firebase</span>. Allows user to create and
-          store data using <span class="font-bold">authentication</span>. Uses
-          Riot <span class="font-bold">API</span> to retrieve live player data
-          by keyword search.
+          Created a Tic Tac Toe Player AI using the minimax algorithm. Uses the
+          most optimal strategy in order to either win or draw each game. Pygame
+          section was used from Harvard's class template.
         </p>
         <p>
-          View the website
+          View the source code
           <span class="underline"
-            ><a href="https://fake-opgg.netlify.app/">here</a></span
-          >
-          and the source code
-          <span class="underline"
-            ><a href="https://github.com/staten-island-tech/vue-project-2-lol"
-              >here</a
-            ></span
+            ><a href="https://github.com/zhangj23/TicTacToe">here</a></span
           >
         </p>
       </div>

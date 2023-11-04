@@ -136,7 +136,7 @@ const projects = [
       <h1 class="text-white text-8xl text-center font-semibold title">
         Projects
       </h1>
-      <div class="mt-12 flex flex-wrap justify-center">
+      <div class="mt-12 flex flex-wrap justify-left">
         <Project
           v-for="project in projects"
           :key="project.name"

@@ -6,6 +6,8 @@
   </div>
 </template>
 <script setup>
+import { gsap } from "gsap";
+
 const props = defineProps({
   image: String,
   path: String,
