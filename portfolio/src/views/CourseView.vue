@@ -37,34 +37,30 @@ pathStore.updatePath("/projects/sudoku");
 
 <template>
   <div
-    class="flex font-ibm bg-gradient-to-r from-[#443db8] via-[#7171d2] via-33% to-[#0097ff] to-100% h-fill"
+    class="flex font-ibm bg-gradient-to-r from-[#443db8] via-[#7171d2] via-33% to-[#0097ff] to-100% h-screen"
   >
     <router-link to="/projects" class="flex text-white absolute m-8 z-10 arrow"
       ><ArrowLeft :size="40" fillColor="#FBEBD9"></ArrowLeft
     ></router-link>
     <div class="mt-28 ml-20 w-full">
       <h1 class="text-white text-6xl font-semibold title">
-        Sudoku Image Solver
+        Backend Developer, Course Selection
       </h1>
       <img
         class="w-2/3 h-1/3 object-cover rounded-md mt-8 image"
-        src="/sudoku.jpg"
+        src="/course.jpg"
         alt=""
       />
-      <div class="mt-8 w-2/3 text-2xl text text-white">
-        <p class="mb-8 font-ibm font-thin">
-          Created a python program that uses
-          <span class="font-bold">Tensorflow</span> and
-          <span class="font-bold">PIL</span> to transform an image of a sudoku
-          puzzle to a grid. Also created a model that reads different fonts and
-          orientations of numbers. Used python backtracking to solve the sudoku
-          puzzle.
-        </p>
-        <p>
-          View the source code
-          <span class="underline"
-            ><a href="https://github.com/zhangj23/SudokuSavant">here</a></span
-          >
+      <div class="mt-8 w-2/3 text">
+        <p class="text-white text-2xl">
+          Pioneered a new <span class="font-bold">full-stack</span> course
+          selection platform for the school to be used by 1300+ students
+          annually. Worked with <span class="font-bold">Django</span> as the
+          main framework while using <span class="font-bold">GraphQL</span> and
+          <span class="font-bold">Postgres</span> to store user and school data.
+          Optimized server costs using
+          <span class="font-bold">dataloaders</span> and created front-end
+          animations.
         </p>
       </div>
     </div>

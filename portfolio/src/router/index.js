@@ -4,6 +4,9 @@ import ProjectView from "../views/ProjectView.vue";
 import ResumeView from "../views/ResumeView.vue";
 import EmailView from "../views/EmailView.vue";
 import SudokuView from "../views/SudokuView.vue";
+import CourseView from "../views/CourseView.vue";
+import OpggView from "../views/OpggView.vue";
+import TicTacToeView from "../views/TicTacToeView.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -31,6 +34,21 @@ const router = createRouter({
       path: "/projects/sudoku",
       component: SudokuView,
       name: "sudoku",
+    },
+    {
+      path: "/projects/course-selection",
+      component: CourseView,
+      name: "course",
+    },
+    {
+      path: "/projects/opgg",
+      component: OpggView,
+      name: "Opgg",
+    },
+    {
+      path: "/projects/tictactoe",
+      component: TicTacToeView,
+      name: "TicTacToe",
     },
   ],
 });
