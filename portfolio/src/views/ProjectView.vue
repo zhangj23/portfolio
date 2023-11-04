@@ -79,20 +79,6 @@ const projects = [
     languages: "Python, Pygame",
     date: "07-2021",
   },
-  {
-    img: "",
-    path: "/sudoku",
-    name: "sssss",
-    languages: "Python, Keras, Pillow",
-    date: "07-2021",
-  },
-  {
-    img: "",
-    path: "/sudoku",
-    name: "fffff",
-    languages: "Python, Keras, Pillow",
-    date: "07-2021",
-  },
 ];
 </script>
 
