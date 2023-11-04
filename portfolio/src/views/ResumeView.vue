@@ -12,7 +12,7 @@ pathStore.updatePath("/resume");
     <NavBar></NavBar>
     <div class="mt-28 mx-auto">
       <h1 class="text-white text-6xl font-semibold text-center">Resume</h1>
-      <img class="w-1/2 m-auto my-16 pb-12" src="Resume.jpg" alt="" />
+      <img class="w-1/2 m-auto my-16 pb-12" src="resume.jpg" alt="" />
     </div>
   </div>
 </template>

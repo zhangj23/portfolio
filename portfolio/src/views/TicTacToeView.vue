@@ -37,33 +37,39 @@ pathStore.updatePath("/projects/sudoku");
 
 <template>
   <div
-    class="flex font-ibm bg-gradient-to-r from-[#443db8] via-[#7171d2] via-33% to-[#0097ff] to-100% h-fill"
+    class="flex font-ibm bg-gradient-to-r from-[#443db8] via-[#7171d2] via-33% to-[#0097ff] to-100% h-fit"
   >
     <router-link to="/projects" class="flex text-white absolute m-8 z-10 arrow"
       ><ArrowLeft :size="40" fillColor="#FBEBD9"></ArrowLeft
     ></router-link>
     <div class="mt-28 ml-20 w-full">
       <h1 class="text-white text-6xl font-semibold title">
-        Sudoku Image Solver
+        User authentication and APIs
       </h1>
       <img
-        class="w-2/3 h-1/3 object-cover rounded-md mt-8 image"
-        src="/sudoku.jpg"
+        class="w-2/3 h-1/2 object-cover rounded-md mt-8 image"
+        src="/tictactoe.jpg"
         alt=""
       />
       <div class="mt-8 w-2/3 text-2xl text text-white">
-        <p class="mb-8 font-ibm font-thin">
-          Created a python program that uses
-          <span class="font-bold">Tensorflow</span> and
-          <span class="font-bold">PIL</span> to transform an image of a sudoku
-          puzzle to a grid. Also created a model that reads different fonts and
-          orientations of numbers. Used python backtracking to solve the sudoku
-          puzzle.
+        <p class="mb-8">
+          Created a full-stack website using
+          <span class="font-bold">Vue 2 </span> and Google's
+          <span class="font-bold">Firebase</span>. Allows user to create and
+          store data using <span class="font-bold">authentication</span>. Uses
+          Riot <span class="font-bold">API</span> to retrieve live player data
+          by keyword search.
         </p>
         <p>
-          View the source code
+          View the website
           <span class="underline"
-            ><a href="https://github.com/zhangj23/SudokuSavant">here</a></span
+            ><a href="https://fake-opgg.netlify.app/">here</a></span
+          >
+          and the source code
+          <span class="underline"
+            ><a href="https://github.com/staten-island-tech/vue-project-2-lol"
+              >here</a
+            ></span
           >
         </p>
       </div>
