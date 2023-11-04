@@ -115,9 +115,9 @@ const projects = [
         <h2 class="text-white text-xl font-semibold m-auto mr-4">
           Connect with me:
         </h2>
-        <router-link to="/email" class="mx-4"
+        <!-- <router-link to="/email" class="mx-4"
           ><EmailOutline :size="48" fillColor="#FBEBD9"></EmailOutline
-        ></router-link>
+        ></router-link> -->
         <a class="mx-4" href="https://github.com/zhangj23"
           ><Github :size="48" fillColor="#FBEBD9"></Github
         ></a>
