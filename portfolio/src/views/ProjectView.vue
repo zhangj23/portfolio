@@ -1,5 +1,4 @@
 <script setup>
-import NavBar from "../components/Navbar.vue";
 import Project from "../components/Project.vue";
 import gsap from "gsap";
 import { onMounted, onUnmounted, ref } from "vue";
