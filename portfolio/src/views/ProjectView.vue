@@ -51,6 +51,7 @@ onMounted(() => {
 
 const projects = [
   {
+    id: "sudoku",
     img: "sudoku.jpg",
     path: "/sudoku",
     name: "Sudoku Image Solver",
@@ -58,23 +59,26 @@ const projects = [
     date: "07-2021",
   },
   {
+    id: "course",
     img: "course.jpg",
     path: "/course-selection",
-    name: "Full Stack Course Selection Website",
+    name: "Course Selection Website",
     languages: "Vue3, Django, GraphQL",
     date: "06-2023",
   },
   {
+    id: "opgg",
     img: "opgg.jpg",
     path: "/opgg",
-    name: "opgg",
+    name: "User authentication and APIs",
     languages: "Firebase, Vue2, GSAP",
     date: "04-2022",
   },
   {
+    id: "tictactoe",
     img: "tictactoe.jpg",
     path: "/tictactoe",
-    name: "tictactoe",
+    name: "Minimax: TicTacToe Optimized",
     languages: "Python, Pygame",
     date: "07-2021",
   },
@@ -145,6 +149,7 @@ const projects = [
           :name="project.name"
           :languages="project.languages"
           :date="project.date"
+          :id="project.id"
           class="project-card"
           ref="cards"
         ></Project>
