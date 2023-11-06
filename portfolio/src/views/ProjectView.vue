@@ -132,11 +132,11 @@ const projects = [
       </div>
     </div>
 
-    <div class="mt-28 mx-auto">
+    <div class="mt-28 flex justify-center flex-col m-auto">
       <h1 class="text-white text-8xl text-center font-semibold title">
         Projects
       </h1>
-      <div class="mt-12 flex flex-wrap justify-left">
+      <div class="grid-cols-3 grid gap-8 my-12">
         <Project
           v-for="project in projects"
           :key="project.name"
