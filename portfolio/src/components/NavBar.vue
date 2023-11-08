@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full absolute flex p-8 justify-between">
+  <div class="w-full absolute lg:flex p-8 justify-between">
     <div class="right-side flex">
       <router-link to="/" class="flex text-white mr-8 link">
         <Home :size="40" fillColor="#FBEBD9"></Home
@@ -20,7 +20,7 @@
         <span class="m-auto text-xl m-2">Resume</span>
       </router-link>
     </div>
-    <div class="socials flex">
+    <div class="ocials lg:flex">
       <h2 class="text-white text-xl font-semibold m-auto mr-4">
         Connect with me:
       </h2>

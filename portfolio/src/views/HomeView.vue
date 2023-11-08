@@ -25,9 +25,13 @@ onMounted(() => {
     class="flex bg-gradient-to-r from-[#443db8] via-[#7171d2] via-33% to-[#0097ff] to-100% h-full"
   >
     <NavBar></NavBar>
-    <div class="text-[#FBEBD9] w-1/2 m-auto">
-      <h1 class="text-5xl mb-2 font-bold font-ibm heading">Hello,</h1>
-      <h1 class="text-5xl font-bold font-ibm heading">I'm Justin Zhang</h1>
+    <div class="text-[#FBEBD9] w-4/5 md:w-3/4 xl:w-1/2 m-auto">
+      <h1 class="text-3xl md:text-5xl mb-2 font-bold font-ibm heading">
+        Hello,
+      </h1>
+      <h1 class="text-3xl md:text-5xl font-bold font-ibm heading">
+        I'm Justin Zhang
+      </h1>
       <h3 class="mt-10 font-jetbrains caption">
         I'm a freshman at Renesslaer Polytechnic Institute pursuing a major in
         Computer Science and ITWS. Take a look around!

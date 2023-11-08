@@ -47,7 +47,7 @@ pathStore.updatePath("/projects/sudoku");
         User authentication and APIs
       </h1>
       <img
-        class="w-2/3 h-1/3 object-cover rounded-md mt-8 image"
+        class="w-2/3 h-1/2 object-cover rounded-md mt-8 image"
         src="/opgg.jpg"
         alt=""
       />
