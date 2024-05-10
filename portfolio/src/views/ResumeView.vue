@@ -7,7 +7,7 @@ pathStore.updatePath("/resume");
 
 <template>
   <div
-    class="flex font-ibm bg-gradient-to-r from-[#443db8] via-[#7171d2] via-33% to-[#0097ff] to-100% h-fit"
+    class="flex font-ibm bg-gradient-to-r from-[#28333e] via-[#494848] via-33% to-[#636363] to-100% h-fit"
   >
     <NavBar></NavBar>
     <div class="mt-28 mx-auto">

@@ -82,12 +82,20 @@ const projects = [
     languages: "Python, Pygame",
     date: "07-2021",
   },
+  {
+    id: "club",
+    img: "club.jpg",
+    path: "/club",
+    name: "SQL login system: ClubHub",
+    languages: "PHP, mySQL",
+    date: "04-2024",
+  },
 ];
 </script>
 
 <template>
   <div
-    class="flex font-ibm bg-gradient-to-r from-[#443db8] via-[#7171d2] via-33% to-[#0097ff] to-100% h-fill"
+    class="flex font-ibm bg-gradient-to-r from-[#28333e] via-[#333333] via-33% to-[#494848] to-100% h-fill"
   >
     <router-view></router-view>
     <router-link to="/" class="flex text-white absolute m-8 z-10 arrow"

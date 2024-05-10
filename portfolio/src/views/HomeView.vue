@@ -22,7 +22,7 @@ onMounted(() => {
 
 <template>
   <div
-    class="flex bg-gradient-to-r from-[#443db8] via-[#7171d2] via-33% to-[#0097ff] to-100% h-full"
+    class="flex bg-gradient-to-r from-[#28333e] via-[#333333] via-33% to-[#494848] to-100% h-full"
   >
     <NavBar></NavBar>
     <div class="text-[#FBEBD9] w-4/5 md:w-3/4 xl:w-1/2 m-auto">

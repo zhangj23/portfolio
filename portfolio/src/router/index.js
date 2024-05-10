@@ -7,6 +7,7 @@ import SudokuView from "../views/SudokuView.vue";
 import CourseView from "../views/CourseView.vue";
 import OpggView from "../views/OpggView.vue";
 import TicTacToeView from "../views/TicTacToeView.vue";
+import ClubView from "../views/ClubView.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -49,6 +50,11 @@ const router = createRouter({
       path: "/projects/tictactoe",
       component: TicTacToeView,
       name: "TicTacToe",
+    },
+    {
+      path: "/projects/club",
+      component: ClubView,
+      name: "Club",
     },
   ],
 });

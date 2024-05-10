@@ -37,30 +37,28 @@ pathStore.updatePath("/projects/sudoku");
 
 <template>
   <div
-    class="flex font-ibm bg-gradient-to-r from-[#28333e] via-[#494848] via-33% to-[#636363] to-100% h-screen"
+    class="flex font-ibm bg-gradient-to-r from-[#28333e] via-[#333333] via-33% to-[#494848] to-100% h-screen"
   >
     <router-link to="/projects" class="flex text-white absolute m-8 z-10 arrow"
       ><ArrowLeft :size="40" fillColor="#FBEBD9"></ArrowLeft
     ></router-link>
     <div class="mt-28 ml-20 w-full">
       <h1 class="text-white text-6xl font-semibold title">
-        Backend Developer, Course Selection
+        Full Stack Developer, ClubHub
       </h1>
       <img
         class="w-2/3 h-1/3 object-cover rounded-md mt-8 image"
-        src="/course.jpg"
+        src="/club.jpg"
         alt=""
       />
       <div class="mt-8 w-2/3 text">
         <p class="text-white text-2xl">
-          Pioneered a new <span class="font-bold">full-stack</span> course
-          selection platform for the school to be used by 1300+ students
-          annually. Worked with <span class="font-bold">Django</span> as the
-          main framework while using <span class="font-bold">GraphQL</span> and
-          <span class="font-bold">Postgres</span> to store user and school data.
-          Optimized server costs using
-          <span class="font-bold">dataloaders</span> and created front-end
-          animations.
+          Created a <span class="font-bold">full-stack</span> club planning
+          platform with both admin and user login functionality. Used
+          <span class="font-bold"> PHP</span> to build the functionality of the
+          website and <span class="font-bold">mySQL</span> to store and pull
+          login and club data. Specialized in web security using hashing,
+          unauthorized redirect, and error handling.
         </p>
       </div>
     </div>
