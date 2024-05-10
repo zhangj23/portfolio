@@ -51,6 +51,14 @@ onMounted(() => {
 
 const projects = [
   {
+    id: "club",
+    img: "club.jpg",
+    path: "/club",
+    name: "SQL login system: ClubHub",
+    languages: "PHP, mySQL",
+    date: "04-2024",
+  },
+  {
     id: "sudoku",
     img: "sudoku.jpg",
     path: "/sudoku",
@@ -81,14 +89,6 @@ const projects = [
     name: "Minimax: TicTacToe Optimized",
     languages: "Python, Pygame",
     date: "07-2021",
-  },
-  {
-    id: "club",
-    img: "club.jpg",
-    path: "/club",
-    name: "SQL login system: ClubHub",
-    languages: "PHP, mySQL",
-    date: "04-2024",
   },
 ];
 </script>
