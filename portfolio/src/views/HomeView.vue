@@ -33,7 +33,7 @@ onMounted(() => {
         I'm Justin Zhang
       </h1>
       <h3 class="mt-10 font-jetbrains caption">
-        I'm a freshman at Renesslaer Polytechnic Institute pursuing a major in
+        I'm a sophomore at Renesslaer Polytechnic Institute pursuing a major in
         Computer Science and ITWS. Take a look around!
       </h3>
     </div>

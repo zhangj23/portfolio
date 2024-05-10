@@ -54,7 +54,7 @@ const projects = [
     id: "club",
     img: "club.jpg",
     path: "/club",
-    name: "SQL login system: ClubHub",
+    name: "SQL Login System: ClubHub",
     languages: "PHP, mySQL",
     date: "04-2024",
   },

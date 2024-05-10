@@ -37,7 +37,7 @@ pathStore.updatePath("/projects/sudoku");
 
 <template>
   <div
-    class="flex font-ibm bg-gradient-to-r from-[#28333e] via-[#494848] via-33% to-[#636363] to-100% h-fit"
+    class="flex font-ibm bg-gradient-to-r from-[#28333e] via-[#333333] via-33% to-[#494848] to-100% h-fit"
   >
     <router-link to="/projects" class="flex text-white absolute m-8 z-10 arrow"
       ><ArrowLeft :size="40" fillColor="#FBEBD9"></ArrowLeft
