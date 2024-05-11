@@ -55,7 +55,7 @@ const projects = [
     img: "club.jpg",
     path: "/club",
     name: "SQL Login System: ClubHub",
-    languages: "PHP, mySQL",
+    languages: "PHP, mySQL, Azure",
     date: "04-2024",
   },
   {
